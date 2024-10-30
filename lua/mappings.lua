@@ -14,13 +14,27 @@ map("i", "jk", "<ESC>")
 map("n", "<leader>fg", "<cmd>Telescope live_grep<CR>", { desc = "telescope live grep" })
 
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
+map({ "n", "i", "v" }, "<C-s>", "<cmd>wall<cr>")
 
--- Remapper les touches pour déplacer les lignes
-vim.keymap.set('n', '<A-j>', ':m .+1<CR>==', { desc = 'Move line down' }) -- Alt + j pour descendrej
-vim.keymap.set('n', '<A-k>', ':m .-2<CR>==', { desc = 'Move line up' })   -- Alt + k pour monter
-
+-- Git
 map("n", "<leader>gc", "<cmd>Telescope git_commits<CR>")
 map("n", "<leader>gb", "<cmd>Telescope git_branches<CR>")
 map("n", "<leader>gdo", "<cmd>DiffviewOpen<CR>")
 map("n", "<leader>gdc", "<cmd>DiffviewClose<CR>")
 map("n", "<leader>gdh", "<cmd>DiffviewFileHistory<CR>")
+
+-- Rename Symbol
+map("n", "<M-r>", "<cmd>lua vim.lsp.buf.rename()<CR>")
+
+-- Move faster with option h/l
+map({ "n", "i", "v" }, "<M-h>", "B")
+map({ "n", "i", "v" }, "<M-l>", "E")
+
+-- Terminal
+map({ "n", "t" }, "<A-x>", function()
+  require("nvchad.term").toggle { pos = "sp", id = "htoggleTerm" }
+end, { desc = "terminal toggleable horizontal term" })
+
+map({ "n", "t" }, "<A-c>", function()
+  require("nvchad.term").toggle { pos = "float", id = "floatTerm" }
+end, { desc = "terminal toggle floating term" })
