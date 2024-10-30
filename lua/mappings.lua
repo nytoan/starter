@@ -38,3 +38,6 @@ end, { desc = "terminal toggleable horizontal term" })
 map({ "n", "t" }, "<A-c>", function()
   require("nvchad.term").toggle { pos = "float", id = "floatTerm" }
 end, { desc = "terminal toggle floating term" })
+
+map("n", "<M-d>", "<cmd>Trouble diagnostics toggle<CR>")
+map("n", "<M-s>", "<cmd>Trouble symbols toggle<CR>")
