@@ -41,3 +41,4 @@ end, { desc = "terminal toggle floating term" })
 
 map("n", "<M-d>", "<cmd>Trouble diagnostics toggle<CR>")
 map("n", "<M-s>", "<cmd>Trouble symbols toggle<CR>")
+map("n", "<M-e>", "<cmd>NvimTreeToggle<CR>")
