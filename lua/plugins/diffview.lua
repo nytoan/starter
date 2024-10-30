@@ -1,7 +1,7 @@
 return {
   'sindrets/diffview.nvim',
   dependencies = 'nvim-lua/plenary.nvim',
-  -- lazy = false -- Permet de lancer le plugin au démarrage
+  lazy = false, -- Permet de lancer le plugin au démarrage
   config = function()
     require('diffview').setup {
       enhanced_diff_hl = true, -- Active la coloration avancée des différences

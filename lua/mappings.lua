@@ -18,3 +18,9 @@ map("n", "<leader>fg", "<cmd>Telescope live_grep<CR>", { desc = "telescope live 
 -- Remapper les touches pour déplacer les lignes
 vim.keymap.set('n', '<A-j>', ':m .+1<CR>==', { desc = 'Move line down' }) -- Alt + j pour descendrej
 vim.keymap.set('n', '<A-k>', ':m .-2<CR>==', { desc = 'Move line up' })   -- Alt + k pour monter
+
+map("n", "<leader>gc", "<cmd>Telescope git_commits<CR>")
+map("n", "<leader>gb", "<cmd>Telescope git_branches<CR>")
+map("n", "<leader>gdo", "<cmd>DiffviewOpen<CR>")
+map("n", "<leader>gdc", "<cmd>DiffviewClose<CR>")
+map("n", "<leader>gdh", "<cmd>DiffviewFileHistory<CR>")
