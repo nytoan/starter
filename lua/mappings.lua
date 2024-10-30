@@ -10,3 +10,7 @@ map("n", ";", ":", { desc = "CMD enter command mode" })
 map("i", "jk", "<ESC>")
 
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
+
+-- Remapper les touches pour déplacer les lignes
+vim.keymap.set('n', '<A-j>', ':m .+1<CR>==', { desc = 'Move line down' }) -- Alt + j pour descendrej
+vim.keymap.set('n', '<A-k>', ':m .-2<CR>==', { desc = 'Move line up' })   -- Alt + k pour monter
