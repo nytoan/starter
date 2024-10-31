@@ -6,12 +6,13 @@
 local M = {}
 
 M.base46 = {
-  theme = "onedark",
+  theme = "onenord",
 
   hl_override = {
     Comment = { italic = true },
     ["@comment"] = { italic = true },
-    ["@variable.parameter"] = { fg = "#ddaa88" },
+    ["@variable.parameter"] = { fg = "#bb9966" },
+    Normal = { bg = "#282d33" }
   },
 }
 
