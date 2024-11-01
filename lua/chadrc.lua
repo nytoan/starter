@@ -13,6 +13,7 @@ M.base46 = {
     ["@comment"] = { italic = true },
 
     ["@variable.parameter"] = { fg = "#bb9966" },
+    ["@punctuation.delimiter"] = { fg = "#aaaaaa" },
 
     -- Normal = { bg = "#282d33" },
     -- NormalFloat = { bg = "#282d33" },
