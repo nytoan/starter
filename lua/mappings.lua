@@ -44,3 +44,6 @@ map("n", "<M-s>", "<cmd>Trouble symbols toggle<CR>")
 map("n", "<M-e>", "<cmd>NvimTreeToggle<CR>")
 
 map("i", "<C-S-Del>", "<esc>ce", { desc = "Delete forward word" })
+
+map("n", "<leader>kf", "<cmd>Telescope keymaps<CR>")
+map("n", "<leader>kk", "<cmd>WhichKey<CR>")
