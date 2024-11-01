@@ -39,9 +39,9 @@ map({ "n", "t" }, "<A-c>", function()
   require("nvchad.term").toggle { pos = "float", id = "floatTerm" }
 end, { desc = "terminal toggle floating term" })
 
-map("n", "<M-d>", "<cmd>Trouble diagnostics toggle<CR>")
-map("n", "<M-s>", "<cmd>Trouble symbols toggle<CR>")
-map("n", "<M-e>", "<cmd>NvimTreeToggle<CR>")
+map("n", "<leader>od", "<cmd>Trouble diagnostics toggle<CR>")
+map("n", "<leader>os", "<cmd>Trouble symbols toggle<CR>")
+map("n", "<leader>oe", "<cmd>NvimTreeToggle<CR>")
 
 map("i", "<C-S-Del>", "<esc>lce", { desc = "Delete forward word" })
 
