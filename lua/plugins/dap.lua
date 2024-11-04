@@ -20,7 +20,9 @@ return {
       }
 
       vim.keymap.set("n", "<leader>bb", dap.toggle_breakpoint)
-      vim.keymap.set("n", "<leader>gb", dap.run_to_cursor)
+      -- vim.keymap.set("n", "<leader>gb", dap.run_to_cursor)
+
+      vim.keymap.set("n", "<leader>or", ui.toggle)
 
       dap.listeners.before.attach.dapui_config = function()
         ui.open()
