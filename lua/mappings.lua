@@ -42,6 +42,7 @@ end, { desc = "terminal toggle floating term" })
 map("n", "<leader>od", "<cmd>Trouble diagnostics toggle focus=true<CR>")
 map("n", "<leader>os", "<cmd>Trouble symbols toggle focus=true<CR>")
 map("n", "<leader>oe", "<cmd>NvimTreeToggle<CR>")
+map("n", "<leader>of", "<cmd>Telescope flutter commands<CR>")
 
 map("i", "<C-S-Del>", "<esc>lce", { desc = "Delete forward word" })
 
