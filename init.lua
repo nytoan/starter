@@ -1,3 +1,7 @@
+if vim.g.neovide then
+  vim.g.neovide_input_macos_option_key_is_meta = "only_left"
+end
+
 vim.g.base46_cache = vim.fn.stdpath "data" .. "/base46/"
 vim.g.mapleader = " "
 
