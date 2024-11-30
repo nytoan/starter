@@ -25,6 +25,7 @@ map("n", "<leader>gdh", "<cmd>DiffviewFileHistory<CR>")
 
 -- Rename Symbol
 map("n", "<M-r>", "<cmd>lua vim.lsp.buf.rename()<CR>")
+map("n", "gn", "<cmd>lua vim.lsp.buf.rename()<CR>")
 
 -- Move faster with option h/l
 map({ "n", "i", "v" }, "<M-h>", "B")
