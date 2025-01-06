@@ -2,6 +2,7 @@ return {
   { "nvim-neotest/nvim-nio" },
 
   { "folke/which-key.nvim", lazy = false },
+  { "Hoffs/omnisharp-extended-lsp.nvim" },
 
   {
     "stevearc/conform.nvim",
