@@ -3,6 +3,10 @@ require "nvchad.mappings"
 -- add yours here
 
 local map = vim.keymap.set
+
+map("v", ">", ">gv", { noremap = true, silent = true })
+map("v", "<", "<gv", { noremap = true, silent = true })
+
 map("n", "gr", "<cmd>lua require('telescope.builtin').lsp_references()<CR>", { noremap = true, silent = true })
 map("n", "gd", "<cmd>lua require('telescope.builtin').lsp_definitions()<CR>", { noremap = true, silent = true })
 
