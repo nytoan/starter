@@ -24,9 +24,6 @@ map({ "n", "i", "v" }, "<C-s>", "<cmd>wall<cr>")
 -- Git
 map("n", "<leader>gc", "<cmd>Telescope git_commits<CR>")
 map("n", "<leader>gb", "<cmd>Telescope git_branches<CR>")
-map("n", "<leader>gdo", "<cmd>DiffviewOpen<CR>")
-map("n", "<leader>gdc", "<cmd>DiffviewClose<CR>")
-map("n", "<leader>gdh", "<cmd>DiffviewFileHistory<CR>")
 
 -- Rename Symbol
 map("n", "<M-r>", "<cmd>lua vim.lsp.buf.rename()<CR>")
