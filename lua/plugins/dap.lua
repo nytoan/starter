@@ -24,6 +24,8 @@ return {
 
       vim.keymap.set("n", "<leader>or", ui.toggle)
 
+      vim.keymap.set("n", "<leader>ot", dap.repl.toggle)
+
       -- dap.listeners.before.attach.dapui_config = function()
       --   ui.open()
       -- end
