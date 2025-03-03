@@ -38,8 +38,8 @@ map({ "n", "t" }, "<A-x>", function()
   require("nvchad.term").toggle { pos = "sp", id = "htoggleTerm" }
 end, { desc = "terminal toggleable horizontal term" })
 
-map({ "n", "t" }, "<A-c>", function()
-  require("nvchad.term").toggle { pos = "float", id = "floatTerm" }
+map({ "n", "t" }, "<A-i>", function()
+  require("nvchad.term").toggle { pos = "float", id = "floatTerm", float_opts = { height = 0.8, width = 0.8, row = 0.05, col = 0.1 } }
 end, { desc = "terminal toggle floating term" })
 
 map("n", "<leader>oe", "<cmd>NvimTreeToggle<CR>")
