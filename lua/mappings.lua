@@ -49,3 +49,5 @@ map("i", "<C-S-Del>", "<esc>lce", { desc = "Delete forward word" })
 
 map("n", "<leader>kf", "<cmd>Telescope keymaps<CR>")
 map("n", "<leader>kk", "<cmd>WhichKey<CR>")
+
+map("n", "<leader>gh", "<cmd>Gitsigns next_hunk<CR>")
