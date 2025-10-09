@@ -5,6 +5,7 @@ return {
   },
   opts = {
     lsp_cfg = true,
+    lsp_keymaps = false,
     lsp_on_attach = false,
   },
   config = function(_, opts)
