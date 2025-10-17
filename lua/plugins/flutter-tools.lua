@@ -14,6 +14,14 @@ return {
           require("dap.ext.vscode").load_launchjs()
         end,
       },
+      dev_log = {
+        filter = function(line)
+          if line:match("EGL_emulation") then
+            return false
+          end
+          return true
+        end
+      }
     })
   end,
 }
