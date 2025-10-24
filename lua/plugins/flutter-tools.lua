@@ -16,7 +16,7 @@ return {
       },
       dev_log = {
         filter = function(line)
-          if line:match("EGL_emulation") then
+          if line:match("EGL_emulation") or line:match("ImageReader_JNI") then
             return false
           end
           return true
