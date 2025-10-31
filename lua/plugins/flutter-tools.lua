@@ -1,3 +1,13 @@
+local function has_value(tab, val)
+  for _, value in ipairs(tab) do
+    if val:match(value) then
+      return true
+    end
+  end
+
+  return false
+end
+
 return {
   'nvim-flutter/flutter-tools.nvim',
   lazy = false,
@@ -16,7 +26,7 @@ return {
       },
       dev_log = {
         filter = function(line)
-          if line:match("EGL_emulation") or line:match("ImageReader_JNI") or line:match("cr_VideoCapture") or line:match("CCodec") or line:match("Codec2Client") then
+          if has_value({ "EGL_emulation", "ImageReader_JNI", "cr_VideoCapture", "CCodec", "Codec2Client", "cn_CronetUrlRequestContext", "BufferPoolAccessor2", "ReflectedParamUpdater", "SurfaceUtils" }, line) then
             return false
           end
           return true
