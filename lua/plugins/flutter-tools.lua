@@ -27,7 +27,24 @@ return {
       dev_log = {
         open_cmd = "80vsplit",
         filter = function(line)
-          if has_value({ "EGL_emulation", "ImageReader_JNI", "cr_VideoCapture", "CCodec", "Codec2Client", "cn_CronetUrlRequestContext", "BufferPoolAccessor2", "ReflectedParamUpdater", "SurfaceUtils" }, line) then
+          if has_value({
+                "EGL_emulation",
+                "ImageReader_JNI",
+                "cr_VideoCapture",
+                "CCodec",
+                "Codec2Client",
+                "cn_CronetUrlRequestContext",
+                "BufferPoolAccessor2",
+                "ReflectedParamUpdater",
+                "SurfaceUtils",
+                "InputConnectionAdaptor",
+                "InsetsController",
+                "ImeTracker",
+                "TrafficStats",
+                "WindowOnBackDispatcher",
+                "PigeonProxyApiRegistrar",
+                "PlatformViewsController"
+              }, line) then
             return false
           end
           return true
