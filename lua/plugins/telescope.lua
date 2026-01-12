@@ -26,7 +26,7 @@ return {
         hidden = true,
         no_ignore = false,
       },
-      git_files = {
+      git_status = {
         file_ignore_patterns = {
           "%.g%.dart$",
           "%.freezed%.dart$",
