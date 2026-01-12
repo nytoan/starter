@@ -26,6 +26,22 @@ return {
         hidden = true,
         no_ignore = false,
       },
+      git_files = {
+        file_ignore_patterns = {
+          "%.g%.dart$",
+          "%.freezed%.dart$",
+        },
+        hidden = true,
+        no_ignore = false,
+      },
+      lsp_references = {
+        file_ignore_patterns = {
+          "%.g%.dart$",
+          "%.freezed%.dart$",
+        },
+        hidden = true,
+        no_ignore = false,
+      },
     },
   },
 }
